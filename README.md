@@ -33,15 +33,16 @@ A powerful, AI-driven YouTube Live Chat bot that acts as your personal moderator
 3.  Click **"Create API key"**.
 4.  Copy the key string (starts with `AIza...`).
 
-#### 2. YouTube Data API Key
-1.  Go to the [Google Cloud Console](https://console.cloud.google.com/).
-2.  Create a new project (or select an existing one).
-3.  In the search bar, type **"YouTube Data API v3"** and select it.
-4.  Click **"Enable"**.
-5.  Go to **Credentials** (in the left sidebar).
-6.  Click **"Create Credentials"** > **"API Key"**.
-7.  Copy the API key.
-    *   *Recommended*: Restrict the key to "YouTube Data API v3" only for security.
+#### 2. YouTube OAuth Credentials (client_secret.json)
+*Required for the bot to post messages to your chat.*
+1.  Go to the [Google Cloud Console Credentials page](https://console.cloud.google.com/apis/credentials).
+2.  Click **"Create Credentials"** > **"OAuth client ID"**.
+3.  **Application type**: Select **"Desktop app"**.
+4.  **Name**: Enter a name (e.g., "YouTube Chat Bot").
+5.  Click **"Create"**.
+6.  Download the JSON file (click the download icon ⬇️).
+7.  **Rename** the downloaded file to `client_secret.json`.
+8.  **Move** this file into the `app` folder of the project.
 
 #### 3. Valorant API Key (Optional)
 *Required only if you want to use Valorant stats commands like `!rank`.*
