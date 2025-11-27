@@ -54,11 +54,11 @@ A powerful, AI-driven YouTube Live Chat bot that acts as your personal moderator
 ```powershell
 # Clone the repository
 git clone <your-repo-url>
-cd adk-streaming
+cd Youtube-Streaming-Chat-Bot
 
 # Create a virtual environment (Recommended)
 python -m venv .venv
-.\.venv\Scripts\activate
+.\.venv\Scripts\activate.ps1
 
 # Install dependencies
 pip install -r requirements.txt
